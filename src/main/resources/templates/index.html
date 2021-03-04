@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="text-align: center;">
+<form method="post" action="/" th:object="${addContactForm}">
+    Imię: <input th:field="*{name}" placeholder="Imie"><br/>
+    Nazwisko: <input th:field="*{surname}" placeholder="Nazwisko"><br/>
+    Numer telefonu: <input th:field="*{phone}" placeholder="Numer"><br/>
+    Email: <input th:field="*{email}" placeholder="Email"><br/>
+    <input type="submit" value="Wyslij">
+</form>
+</div>
+</body>
+</html>
